@@ -1,0 +1,16 @@
+We will implement the following endpoints:
+
+POST /user/register               ---    create new user
+POST /user/login                  ---    login to existing user
+DELETE /user/{uid}/only           ---    delete only the user & not posts linked with user
+DELETE /user/{uid}/all            ---    delete all data including posts about the user
+
+
+We will implement the following endpoints:
+
+POST /posts/{uid}                 ---    create new post for the user
+GET /posts/{uid}                  ---    get all posts related to the user
+GET /posts/{uid}/{postID}         ---    get specific post related to the user
+PATCH /posts/{uid}/{postID}       ---    update the post related to that user using uid for validation and postID to update post title
+DELETE /posts/{uid}/{postID}      ---    delete all data regarding the posts about the user
+
